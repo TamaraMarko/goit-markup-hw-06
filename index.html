@@ -499,8 +499,11 @@
              type="text"
              name="name"
              id="name"
-             autofocus
+             
              >
+             <svg class="modal_icons" width="12" height="12">
+              <use href="./images_index/symbol-defs.svg#icon-person" ></use>
+             </svg>
           </div>
           <div class="form-field">
             <label class="modal-label" for="tel">Phone</label>
@@ -509,6 +512,9 @@
             name="tel"
             id="tel"
             >
+            <svg class="modal_icons" width="13" height="13">
+              <use href="./images_index/symbol-defs.svg#icon-phone" ></use>
+             </svg>
           </div>
           <div class="form-field">
             <label class="modal-label" for="mail">Email</label>
@@ -517,6 +523,9 @@
             name="mail"
             id="mail"
             >
+            <svg class="modal_icons" width="15" height="12">
+              <use href="./images_index/symbol-defs.svg#icon-email" ></use>
+             </svg>
           </div>
           <div class="form-field">
             <label class="modal-label" for="feedback">Comment</label>
@@ -526,12 +535,13 @@
         </div>
 
         <div class="checkbox">
-          <input 
+          <input class="input-checkbo"
           type="checkbox"
           name="checkbox"
           id="privacy_policy"
           >
-          <label class="privacy_policy" for="privacy_policy">I accept the terms and conditions of the <span class="checkbox-accent">Privacy Policy</span></label>
+          <span class="true-checkbox"></span>
+          <label class="privacy_policy" for="privacy_policy">I accept the terms and conditions of the <a class="checkbox-accent link" href="index.html">Privacy Policy</a></label>
         </div>
 
       <button class="submit">Send</button>

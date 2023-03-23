@@ -785,6 +785,13 @@ justify-content: center;
 border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
+.modal-btn:hover,
+.modal-btn:focus{
+  background-color: var(--pressed-color);
+  fill: #fff;
+  border: 0;
+}
+
 .modal-title {
   font-family: 'Roboto';
 font-style: normal;
@@ -798,9 +805,10 @@ margin: 48px 0 16px;
 color: var(--dark-color);
 }
 .form-field {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column
+  flex-direction: column;
 }
 
 .form-field:not(:last-child) {
@@ -814,6 +822,18 @@ color: var(--dark-color);
   
 }
 
+.true-checkbox {
+  width: 16px;
+  height: 16px;
+  border: 1.25px solid #2E2F42;
+border-radius: 2px;
+
+}
+.input-checkbox:checked + .true-checkbox{
+  background-color: var(--pressed-color);
+  background-image: url(../images_index/symbol-defs.svg#icon-click-arrow);
+}
+
 .modal-label {
   font-family: 'Roboto';
   font-style: normal;
@@ -824,20 +844,33 @@ letter-spacing: 0.04em;
 margin-bottom: 4px;
 } 
 .modal-input {
+  position: relative;
   height: 40px;
 width: 360px;
 border: 1px solid  rgba(33, 33, 33, 0.2);
 border-radius: 4px;
+padding-left: 40px;
+transition: border 250ms var(--timing-function);
+transition:  1000ms ease-out;
+}
 
+.modal-input:hover , .modal-input:focus{
+  border: 1px solid var(--accent-color);
+  transition: opacity 250ms var(--timing-function);
 }
 
 .text-feedback {
   width: 360px;
 height: 120px;
-
+padding-top: 8px;
+padding-left: 16px;
 border: 1px solid rgba(33, 33, 33, 0.2);
 border-radius: 4px;
 resize: none;
+}
+.text-feedback:hover {
+  border: 1px solid var(--accent-color);
+  transition: border 250ms var(--timing-function);
 }
 .text-feedback::placeholder {
   font-family: 'Roboto';
@@ -887,3 +920,25 @@ padding: 16px 32px;
 gap: 10px;
 margin: 0 auto;
 }
+
+.modal_icons {
+  position: absolute;
+  bottom: 25%;
+  left: 16px;
+  opacity: 1;
+  fill: var(--modal-color);
+}
+
+
+
+
+.modal-input:hover + .modal_icons {
+  fill: var(--accent-color);
+  transition: opacity 250ms var(--timing-function); 
+ 
+} 
+
+.modal-input:focus + .modal_icons {
+  fill: var(--accent-color);
+  
+} 
