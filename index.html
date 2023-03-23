@@ -477,6 +477,24 @@
             </li>
           </ul>
         </div>
+
+        <div class="subscribe">
+          <div class="subscribe-cntr">
+            <label class="subscribe-label" for="sub-mail">Subscribe</label>
+            <input 
+              class="subscribe-input"
+              type="mail"
+              name="mail"
+              id="sub-mail"
+              placeholder="E-mail"
+              >
+          </div>
+          <button class="subscribe-btn btn" type="submit">Subscribe
+            <svg class="subscribe-icon" width="24" height="24">
+              <use href="./images_index/symbol-defs.svg#icon-sub-telegram"></use>
+            </svg>
+          </button>
+        </div>
       </div>
     </footer>
     <div class="backdrop is-hidden"  data-modal>
@@ -499,7 +517,7 @@
              type="text"
              name="name"
              id="name"
-             
+             required
              >
              <svg class="modal_icons" width="12" height="12">
               <use href="./images_index/symbol-defs.svg#icon-person" ></use>
@@ -511,6 +529,7 @@
             type="tel"
             name="tel"
             id="tel"
+            required
             >
             <svg class="modal_icons" width="13" height="13">
               <use href="./images_index/symbol-defs.svg#icon-phone" ></use>
@@ -522,6 +541,7 @@
             type="mail"
             name="mail"
             id="mail"
+            required
             >
             <svg class="modal_icons" width="15" height="12">
               <use href="./images_index/symbol-defs.svg#icon-email" ></use>
@@ -530,7 +550,7 @@
           <div class="form-field">
             <label class="modal-label" for="feedback">Comment</label>
             <textarea class="text-feedback" name="feedback" id="feedback" cols="38px" rows="6px"
-            placeholder="Text input"></textarea>
+            placeholder="Text input"  required></textarea>
           </div>
         </div>
 
@@ -540,11 +560,15 @@
           name="checkbox"
           id="privacy_policy"
           >
-          <span class="true-checkbox"></span>
+          <span class="true-checkbox">
+            <svg class="modal-arrow-icon" width="10" height="8">
+              <use href="./images_index/symbol-defs.svg#icon-click-arrow"></use>
+            </svg>
+          </span>
           <label class="privacy_policy" for="privacy_policy">I accept the terms and conditions of the <a class="checkbox-accent link" href="index.html">Privacy Policy</a></label>
         </div>
 
-      <button class="submit">Send</button>
+      <button type="submit" class="submit btn">Send</button>
         
        </form>
 
