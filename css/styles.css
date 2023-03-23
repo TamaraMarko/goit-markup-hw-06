@@ -831,7 +831,8 @@ border-radius: 2px;
 }
 .input-checkbox:checked + .true-checkbox{
   background-color: var(--pressed-color);
-  background-image: url(../images_index/symbol-defs.svg#icon-click-arrow);
+  background-image: url(../images_index/symbol-form-arrow.svg);
+  
 }
 
 .modal-label {
