@@ -831,7 +831,7 @@ border-radius: 2px;
 }
 .input-checkbox:checked + .true-checkbox{
   background-color: var(--pressed-color);
-  background-image: url(../images_index/symbol-form-arrow.svg);
+  background-image: url(../images_index/arrow-click.svg);
   
 }
 
