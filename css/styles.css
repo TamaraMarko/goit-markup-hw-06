@@ -107,6 +107,7 @@ transition: opacity 250ms var(--timing-function);
 
 .nav-link:hover{
   color: var(--pressed-color);
+  transition: color 250ms var(--timing-function);
 }
 .nav-link:focus {
   color: var(--pressed-color);
@@ -134,12 +135,14 @@ transition: opacity 250ms var(--timing-function);
 }
 .nav-link:hover .nav-link:focus {
   color: var(--accent-color);
+  transition: color 250ms var(--timing-function);
 }
 .header-link:hover {
   color: var(--accent-color);
   fill: var(--accent-color);
+  transition: color 250ms var(--timing-function);
 }
-.header-link:active {
+.header-link:focus {
   color: var(--accent-color);  
   fill: var(--accent-color);
 }
@@ -233,6 +236,7 @@ letter-spacing: 0.02em;
 .hero-button:hover ,.hero-button:focus {
   background-color: var(--pressed-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition: background-color 250ms var(--timing-function);
 }
 .btn {
   cursor: pointer;
@@ -382,6 +386,7 @@ letter-spacing: 0.02em;
 .team-icon-link:hover{
   border-radius: 50%;
   background-color: var(--pressed-color);
+  transition: background-color 250ms var(--timing-function);
 }
 .team-icon-link:focus{
   border-radius: 50%;
@@ -444,6 +449,7 @@ text-transform: capitalize;
 }
 .partners-item:hover {
   border-color: var(--accent-color);
+  transition: border-color 2500ms var(--timing-function);
 }
 .partners-link{
   display: flex;
@@ -459,6 +465,7 @@ border-radius: 4px;
   fill: var(--pressed-color);
   border: 1px solid var(--pressed-color);
 border-radius: 4px;
+transition: fill 250ms var(--timing-function);
 }
 .partners-link:focus{
   fill: var(--accent-color);
@@ -556,7 +563,7 @@ letter-spacing: 0.02em;
 .footer-icons-link:hover {
   border-radius: 50%;
   background-color: var(--success-color);
-
+  transition: background-color 250ms var(--timing-function);
 }
 .footer-icons-link:focus {
   border-radius: 50%;
@@ -615,6 +622,11 @@ letter-spacing: 0.04em;
 border-radius: 4px;
 padding: 0 24px;
 margin-left: 24px;
+}
+.subscribe-btn:hover,
+.subscribe-btn:focus {
+  background-color: var(--pressed-color);
+  transition: background-color 250ms var(--timing-function);
 }
 .subscribe-icon{
   fill: #FFFFFF;
@@ -681,6 +693,7 @@ margin-left: 24px;
 .btn-nav:hover {
   background-color: var(--accent-color);
   color: var(--white-color);
+  transition: background-color 250ms var(--timing-function);
 }
 .btn-nav:focus{
   background-color: var(--accent-color);
@@ -694,6 +707,7 @@ margin-left: 24px;
 }
 .gallery-item-link:hover {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  transition: box-shadow 250ms var(--timing-function);
 }
 .gallery-item-link:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -805,13 +819,13 @@ padding: 40px 32px 0 ;
 }
 
 .modal {
-  position: relative;
+  position: absolute;
   top: 50%;
   left: 50%;
 
  
   width: 408px;
-  height: 584px;
+  min-height: 584px;
   padding: 24px;
 
 
@@ -846,6 +860,7 @@ border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: var(--pressed-color);
   fill: #fff;
   border: 0;
+  transition: background-color 250ms var(--timing-function);
 }
 
 .modal-title {
@@ -890,6 +905,7 @@ border-radius: 2px;
   background-image: url(../images_index/arrow-click.svg);
   background-size: contain;
   border-color: var(--pressed-color);
+  transition: background-color 250ms var(--timing-function);
 }
 .input-checkbox {
   position: absolute;
@@ -976,7 +992,7 @@ text-decoration-line: underline;
   width: 169px;
   height: 56px;
   background: var(--accent-color);
-box-shadow: rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 border-radius: 4px;
 border: 0;
 color: #FFFFFF;
@@ -988,7 +1004,10 @@ padding: 16px 32px;
 gap: 10px;
 margin: 0 auto;
 }
-
+.submit:hover{
+  background-color: var(--pressed-color);
+  transition: background-color 250ms var(--timing-function);
+}
 .modal_icons {
   position: absolute;
   bottom: 25%;
