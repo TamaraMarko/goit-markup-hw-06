@@ -478,42 +478,47 @@
           </ul>
         </div>
 
+
         <div class="subscribe">
-          <div class="subscribe-cntr">
-            <label class="subscribe-label" for="sub-mail">Subscribe</label>
-            <input 
+          <p class="subscribe-label">Subscribe</p>
+          <form class="subscribe-cntr">
+            
+            <input aria-label="email"
               class="subscribe-input"
               type="email"
               name="mail"
               id="sub-mail"
               placeholder="E-mail"
               >
-          </div>
-          <button class="subscribe-btn btn" type="submit">Subscribe
-            <svg class="subscribe-icon" width="24" height="24">
-              <use href="./images_index/symbol-defs.svg#icon-sub-telegram"></use>
-            </svg>
-          </button>
+            <button class="subscribe-btn btn" type="submit">Subscribe
+              <svg class="subscribe-icon" width="24" height="24">
+                <use href="./images_index/symbol-defs.svg#icon-sub-telegram"></use>
+              </svg>
+            </button>
+          </form>
+          
         </div>
+
       </div>
     </footer>
     <div class="backdrop is-hidden"  data-modal>
       <div class="modal">
-        
-       <form class="form js-speaker-form">
         <button data-modal-close class="btn modal-btn" type="button">
-            <svg class="modal-icon" width="8" height="8">
-              <use
-                href="./images_index/symbol-defs.svg#icon-close"
-              ></use>
-            </svg>
-        </button>
+          <svg class="modal-icon" width="8" height="8">
+            <use
+              href="./images_index/symbol-defs.svg#icon-close"
+            ></use>
+          </svg>
+      </button>
+       <form class="form js-speaker-form">
 
-        <h2 class="modal-title">Leave your contacts and we will call you back</h2>
+
+        <p class="modal-title">Leave your contacts and we will call you back</p>
         <div class="inputs">
           <div class="form-field">
             <label class="modal-label" for="name">Name</label>
-            <input class="modal-input" 
+            <div class="modal-cntr">
+              <input class="modal-input" 
              type="text"
              name="name"
              id="name"
@@ -522,10 +527,13 @@
              <svg class="modal_icons" width="12" height="12">
               <use href="./images_index/symbol-defs.svg#icon-person" ></use>
              </svg>
+            </div>
+            
           </div>
           <div class="form-field">
             <label class="modal-label" for="tel">Phone</label>
-            <input class="modal-input" 
+            <div class="modal-cntr">
+              <input class="modal-input" 
             type="tel"
             name="tel"
             id="tel"
@@ -534,10 +542,13 @@
             <svg class="modal_icons" width="13" height="13">
               <use href="./images_index/symbol-defs.svg#icon-phone" ></use>
              </svg>
+            </div>
+            
           </div>
           <div class="form-field">
             <label class="modal-label" for="mail">Email</label>
-            <input class="modal-input" 
+            <div class="modal-cntr">
+              <input class="modal-input" 
             type="email"
             name="mail"
             id="mail"
@@ -546,6 +557,8 @@
             <svg class="modal_icons" width="15" height="12">
               <use href="./images_index/symbol-defs.svg#icon-email" ></use>
              </svg>
+            </div>
+            
           </div>
           <div class="form-field">
             <label class="modal-label" for="feedback">Comment</label>
