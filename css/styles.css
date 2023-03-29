@@ -630,7 +630,7 @@ font-style: normal;
 font-weight: 500;
 font-size: 16px;
 line-height: calc(24/16);
-color:rgba(255, 255, 255, 0.6);
+color:#FFFFFF;
 display: flex;
 justify-content: space-between;
 align-items: center;
