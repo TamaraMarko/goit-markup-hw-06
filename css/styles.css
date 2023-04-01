@@ -908,16 +908,17 @@ color: var(--dark-color);
 border-radius: 2px;
 
 }
-.input-checkbox:checked + .true-checkbox{
+.input-checkbox:checked + .true-checkbox {
   background-color: var(--pressed-color);
   background-image: url(../images_index/arrow-click.svg);
   background-size: contain;
   border-color: var(--pressed-color);
   transition: background-color 250ms var(--timing-function);
-  opacity: 1;
   transition: opacity 250ms var(--timing-function);
 }
-
+.input-checkbox:checked + .true-checkbox .modal-arrow-icon {
+  opacity: 1;
+}
 .input-checkbox {
   position: absolute;
   white-space: nowrap;
@@ -935,6 +936,7 @@ border-radius: 2px;
 }
 .modal-arrow-icon:focus {
   opacity: 1;
+  transition: opacity 250ms var(--timing-function);
 }
 .modal-label {
   font-family: 'Roboto';
@@ -1043,7 +1045,7 @@ background-color: var(--accent-color);
 
 .modal-input:hover + .modal_icons {
   fill: var(--accent-color);
-  transition: opacity 250ms var(--timing-function); 
+  transition: fill 250ms var(--timing-function); 
  
 } 
 
